@@ -105,7 +105,7 @@ if($category == 1)
     }
 }
 
-else
+elseif($category == 0)
 {
     $sql = "SELECT * FROM buyer WHERE bemail='$email'";
 

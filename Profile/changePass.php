@@ -32,8 +32,8 @@
             if($newPass == $conNewPass)
             {
                 $conNewPass = dataFilter(password_hash($_POST['conNewPass'], PASSWORD_BCRYPT));
-                $currHash = $_SESSION['Hash'];
-                $sql = "UPDATE members SET Password='$conNewPass', Hash='$newHash' WHERE Hash='$currHash';";
+                $currHash = $User['Hash']; // Fetch the current hash from the database.
+                $sql = "UPDATE members SET Password='$conNewPass', Hash='$newHash' WHERE Hash='$currHash';";          
 
                 $result = mysqli_query($conn, $sql);
 

@@ -102,7 +102,7 @@
 			</div>
 			<div>
 				<i class="fa fa-envelope"></i>
-				<p style="font-size:20px"><a href="mailto:agroculture@gmail.com" style="color:white">demo@demo.com</a></p>
+				<p style="font-size:20px"><a href="mailto:agroculture@gmail.com" style="color:white">AgroCulture@gmail.com</a></p>
 			</div>
 		</div>
 
