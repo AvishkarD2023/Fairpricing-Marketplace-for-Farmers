@@ -46,7 +46,7 @@ The **Agriculture Management System** is a web-based platform designed to connec
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/your-repo/agriculture-management-system.git
+   git clone https://github.com/AvishkarD2023/Agriculture-Management-System.git
    ```
 
 2. **Setup Local Server**:
@@ -136,9 +136,4 @@ Agriculture-Management-System/
 This project is licensed under the MIT License. Feel free to use and modify it as per your needs.
 
 ---
-
-## Contact
-For any queries or support, contact us at:
-- **Email**: support@agriculture-system.com
-- **GitHub**: [GitHub Repository](https://github.com/your-repo/agriculture-management-system)
 
