@@ -7,7 +7,7 @@
 	{
 		$_SESSION['message'] = "You need to first login to access this page !!!";
 		header("Location: Login/error.php");
-	}
+	} 
 
 	if ($_SERVER["REQUEST_METHOD"] == "POST" AND isset($_SESSION['logged_in']) AND $_SESSION['logged_in'] == 1)
 	{

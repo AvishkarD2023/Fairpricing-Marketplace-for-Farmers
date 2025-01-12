@@ -3,7 +3,7 @@
 ?>
 
 <!DOCTYPE HTML>
-
+  
 <html>
 	<head>
 		<title>AgroCulture : Write a Blog</title>
