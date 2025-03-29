@@ -48,6 +48,7 @@
                 </p><br />
                 <a href = "../index.php" class="button special">HOME</a>
 
+                <a href="../billl.php" class="button special">Print Bill</a>
 
     	<?php $_SESSION['message'] = ""; ?>
 

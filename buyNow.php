@@ -1,6 +1,13 @@
 <?php
 	session_start();
-	require 'db.php';
+    require 'db.php';
+    
+    // Check if pid exists in GET parameters
+    // if (!isset($_GET['pid'])) {
+    //     die("Product ID is missing");
+    // }
+
+    
     $pid = $_GET['pid'];
     if($_SERVER['REQUEST_METHOD'] == "POST")
     {
@@ -13,11 +20,11 @@
         $bid = $_SESSION['id'];
 
         $sql = "INSERT INTO transaction (bid, pid, name, city, mobile, email, pincode, addr)
-                VALUES ('$bid', '$pid', '$name', '$city', '$mobile', '$email', '$pincode', '$addr')";
+                VALUES ($bid, $pid, '$name', '$city', '$mobile', '$email', '$pincode', '$addr')";
         $result = mysqli_query($conn, $sql);
         if($result)
         {
-            $_SESSION['message'] = "Order Succesfully placed! <br /> Thanks for shopping with us!!!";
+            $_SESSION['message'] = "Order Succesfully placed! </br> Thanks for shopping with us!!!";
             header('Location: Login/success.php');
         }
         else {
